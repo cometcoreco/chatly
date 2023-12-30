@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Following</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Unity Dashboard Kit - Gaming">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ui8">
+    <meta name="twitter:title" content="Unity Dashboard Kit - Gaming">
+    <meta name="twitter:description" content="Ultimate Social Gaming Dashboard Kit">
+    <meta name="twitter:creator" content="@ui8">
+    <meta name="twitter:image" content="https://ui8-unity-gaming.herokuapp.com/img/twitter-card.jpg">
+    <meta property="og:title" content="Unity">
+    <meta property="og:type" content="Article">
+    <meta property="og:url" content="https://ui8-unity-gaming.herokuapp.com/">
+    <meta property="og:image" content="https://ui8-unity-gaming.herokuapp.com/img/fb-og-image.jpg">
+    <meta property="og:description" content="Ultimate Social Gaming Dashboard Kit">
+    <meta property="og:site_name" content="Unity Dashboard Kit - Gaming">
+    <meta property="fb:admins" content="132951670226590">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,500;1,500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" media="all" href="css/custom.css">
+    <link rel="stylesheet" media="all" href="css/custom.css">
+    <link rel="stylesheet" href="https://ui8-synapse-d5dce71271b7.herokuapp.com/_next/static/css/2cf0ff3e3d64bd67.css" data-precedence="next">
+    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
+if (viewportmeta) {
+  if (screen.width < 375) {
+    var newScale = screen.width / 375;
+    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+  } else {
+    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+  }
+}</script>
+  </head>
+  <body>
+    <script>console.log(localStorage.getItem('darkMode'));
+if (localStorage.getItem('darkMode') === "on") {
+		document.body.classList.add("dark");
+		document.addEventListener("DOMContentLoaded", function() {
+		  document.querySelector('.js-switch-theme input').checked = true;
+		});
+}
+</script>
+    <div class="page">
+      <div class="sidebar">
+        <div class="sidebar__top"><a class="sidebar__logo" href="index.html"><img class="sidebar__pic sidebar__pic_black" src="img/chatly.png" alt="" /><img class="sidebar__pic sidebar__pic_white" src="img/chatly.png" alt="" /></a><button class="sidebar__burger"></button><button class="sidebar__close"><svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg></button></div>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__inner">
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm"><span>My </span>Pages</div>
+              <div class="sidebar__menu"><a class="sidebar__item" href="dashboard.html">
+                  <div class="sidebar__icon"><svg class="icon icon-game-play">
+                      <use xlink:href="img/sprite.svg#icon-game-play"></use>
+                    </svg></div>
+                  <div class="sidebar__text">Dashboard</div>
+                </a><a class="sidebar__item active" href="chats.html">
+                  <div class="sidebar__icon"><svg class="icon icon-chat">
+                      <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg></div>
+                  <div class="sidebar__text">Chats</div>
+                  <div class="sidebar__counter">20</div>
+                </a>
+                </a><a class="sidebar__item" href="assistants.html">
+                  <div class="sidebar__icon"><svg class="icon icon-document">
+                      <use xlink:href="img/sprite.svg#icon-profile"></use>
+                    </svg></div>
+                  <div class="sidebar__text">Assistants</div>
+                  
+                </a><a class="sidebar__item" href="your-videos.html">
+                  <div class="sidebar__icon"><svg class="icon icon-camera">
+                      <use xlink:href="img/sprite.svg#icon-camera"></use>
+                    </svg></div>
+                  <div class="sidebar__text">Subscription</div>
+          
+                </a><a class="sidebar__item" href="playlist.html">
+                  <div class="sidebar__icon"><svg class="icon icon-settings">
+                      <use xlink:href="img/sprite.svg#icon-settings"></use>
+                    </svg></div>
+                  <div class="sidebar__text">Settings</div>
+                </a></div>
+            </div>
+            <div class="sidebar__group">
+              <div class="sidebar__caption caption-sm">Assistants</div>
+              <div class="sidebar__list"><a class="sidebar__item online" href="assistant-profile.html">
+                  <div class="sidebar__ava"><img class="sidebar__pic" src="https://ui8-astroclash.herokuapp.com/_next/image?url=%2Fimages%2Fcontent%2Favatars%2Flarge%2Favatar-2.jpg&w=256&q=100" alt="" /></div>
+                  <div class="sidebar__text">Cody</div>
+                </a><a class="sidebar__item online" href="assistant-profile.html">
+                  <div class="sidebar__ava"><img class="sidebar__pic" src="https://ui8-astroclash.herokuapp.com/_next/image?url=%2Fimages%2Fcontent%2Favatars%2Flarge%2Favatar-1.jpg&w=256&q=100" alt="" /></div>
+                  <div class="sidebar__text">Melvin</div>
+                </a></div><a class="sidebar__more" href="#">
+                <div class="sidebar__arrow__right"><svg class="icon icon-arrow-right">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg></div>
+                <div class="sidebar__text">Create new</div>
+              </a>
+            </div>
+            
+          </div>
+          <div class="sidebar__banner">
+            <div class="sidebar__bg" style="background-image: url('img/sidebar-banner.png');"></div><button class="sidebar__remove"><svg class="icon icon-remove">
+                <use xlink:href="img/sprite.svg#icon-remove"></use>
+              </svg></button>
+            <div class="sidebar__details">
+              <div class="sidebar__title h5">Join the Unity&nbsp;Gaming</div>
+              <div class="sidebar__info caption-sm">Discover the best livestreams anywhere.</div><button class="sidebar__btn btn btn_purple btn_wide">Join Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__bottom"><label class="switch switch_theme js-switch-theme"><input class="switch__input" type="checkbox" /><span class="switch__in"><span class="switch__box"></span><span class="switch__icon"><svg class="icon icon-moon">
+                  <use xlink:href="img/sprite.svg#icon-moon"></use>
+                </svg><svg class="icon icon-sun">
+                  <use xlink:href="img/sprite.svg#icon-sun"></use>
+                </svg></span></span></label><a class="sidebar__download" href="#"><svg class="icon icon-download">
+              <use xlink:href="img/sprite.svg#icon-download"></use>
+            </svg></a></div>
+      </div>
+      <div class="page__wrapper">
+        <div class="header"><button class="header__burger"></button>
+          <div class="header__item header__item_browse js-header-item">
+            <div class="header__head js-header-head"><svg class="icon icon-location">
+                <use xlink:href="img/sprite.svg#icon-location"></use>
+              </svg>Browse<svg class="icon icon-arrow-down">
+                <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+              </svg></div>
+            <div class="header__body"><a class="header__line" href="browse.html">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Popular Categories</div>
+              </a><a class="header__line" href="browse.html">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Hot Streamers</div>
+              </a><a class="header__line" href="browse.html">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Trending Videos</div>
+              </a><a class="header__line" href="sign-in.html">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Sign In</div>
+              </a><a class="header__line" href="sign-up.html">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Sign Up</div>
+              </a><a class="header__line js-popup-open" href="#popup-stories">
+                <div class="header__icon"><svg class="icon icon-star">
+                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                  </svg></div>
+                <div class="header__text">Stories</div>
+              </a></div>
+          </div>
+          <form class="header__search"><input class="header__input" type="text" placeholder="Search Everything" /><button class="header__btn-search"><svg class="icon icon-search">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg></button></form>
+          <div class="header__control">
+            <div class="header__item header__item_add js-header-item"><button class="header__head js-header-head"><svg class="icon icon-plus-sm">
+                  <use xlink:href="img/sprite.svg#icon-plus-sm"></use>
+                </svg></button>
+              <div class="header__body js-header-body"><a class="header__line" href="upload-videos.html">
+                  <div class="header__icon"><svg class="icon icon-camera">
+                      <use xlink:href="img/sprite.svg#icon-camera"></use>
+                    </svg></div>
+                  <div class="header__text">New Video</div>
+                  <div class="header__icon"><svg class="icon icon-add">
+                      <use xlink:href="img/sprite.svg#icon-add"></use>
+                    </svg></div>
+                </a><a class="header__line" href="#">
+                  <div class="header__icon"><svg class="icon icon-star">
+                      <use xlink:href="img/sprite.svg#icon-star"></use>
+                    </svg></div>
+                  <div class="header__text">Go live</div>
+                  <div class="header__icon"><svg class="icon icon-live">
+                      <use xlink:href="img/sprite.svg#icon-live"></use>
+                    </svg></div>
+                </a></div>
+            </div><a class="header__item header__item_search" href="#"><svg class="icon icon-search">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg></a>
+            <div class="header__item header__item_notifications js-header-item"><button class="header__head js-header-head"><svg class="icon icon-bell">
+                  <use xlink:href="img/sprite.svg#icon-bell"></use>
+                </svg>
+                <div class="header__counter">2</div>
+              </button>
+              <div class="header__body js-header-body">
+                <div class="notifications">
+                  <div class="notifications__info h6">Recent Notification</div>
+                  <div class="notifications__list"><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-1.png" alt="" />
+                        <div class="notifications__status bg-blue"><img class="notifications__pic" src="img/chat.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Sarah Saunders</div>
+                          <div class="notifications__time">8h</div>
+                        </div>
+                        <div class="notifications__text">Commented on <span class="notifications__project">The Results Are Beautif</span></div>
+                      </div>
+                    </a><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-2.png" alt="" />
+                        <div class="notifications__status bg-blue"><img class="notifications__pic" src="img/chat.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Glenn Greer</div>
+                          <div class="notifications__time">12h</div>
+                        </div>
+                        <div class="notifications__text">Commented on <span class="notifications__project">Your Latest Video</span></div>
+                      </div>
+                    </a><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-3.png" alt="" />
+                        <div class="notifications__status bg-blue"><img class="notifications__pic" src="img/chat.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Sarah Saunders</div>
+                          <div class="notifications__time">13h</div>
+                        </div>
+                        <div class="notifications__text">Commented on <span class="notifications__project">Your Latest Video</span></div>
+                      </div>
+                    </a><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-4.png" alt="" />
+                        <div class="notifications__status bg-green"><img class="notifications__pic" src="img/chat.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Sarah Saunders</div>
+                          <div class="notifications__time">19h</div>
+                        </div>
+                        <div class="notifications__text">Commented on <span class="notifications__project">Your Latest Video</span></div>
+                      </div>
+                    </a><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-2.png" alt="" />
+                        <div class="notifications__status bg-purple"><img class="notifications__pic" src="img/message.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Sarah Saunders</div>
+                          <div class="notifications__time">21h</div>
+                        </div>
+                        <div class="notifications__text">Sent you a message 📪 </div>
+                      </div>
+                    </a><a class="notifications__item" href="#">
+                      <div class="notifications__ava"><img class="notifications__pic" src="img/ava-5.png" alt="" />
+                        <div class="notifications__status bg-orange"><img class="notifications__pic" src="img/heart.svg" alt="" /></div>
+                      </div>
+                      <div class="notifications__details">
+                        <div class="notifications__line">
+                          <div class="notifications__user">Glenn Greer</div>
+                          <div class="notifications__time">24h</div>
+                        </div>
+                        <div class="notifications__text">Liked <span class="notifications__project">Your Latest Video</span></div>
+                      </div>
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__item header__item_profile"><a class="header__head" href="#"><img class="header__pic" src="img/avatar.png" alt="" /></a>
+            <div class="header__body"><a class="header__link" href="#">
+                <div class="header__img"><svg class="icon icon-profile">
+                    <use xlink:href="img/sprite.svg#icon-profile"></use>
+                  </svg></div>Profile
+              </a><a class="header__link" href="playlist.html">
+                <div class="header__img"><svg class="icon icon-document">
+                    <use xlink:href="img/sprite.svg#icon-document"></use>
+                  </svg></div>My Playlist
+              </a><a class="header__link" href="assistant-profile.html">
+                <div class="header__img"><svg class="icon icon-joystick">
+                    <use xlink:href="img/sprite.svg#icon-joystick"></use>
+                  </svg></div>My Channel
+              </a><a class="header__link js-popup-open" href="#popup-settings" data-effect="mfp-zoom-in">
+                <div class="header__img"><svg class="icon icon-settings">
+                    <use xlink:href="img/sprite.svg#icon-settings"></use>
+                  </svg></div>Settings
+              </a><a class="header__link" href="#">
+                <div class="header__img"><svg class="icon icon-logout">
+                    <use xlink:href="img/sprite.svg#icon-logout"></use>
+                  </svg></div>Log Out
+              </a></div>
+          </div>
+        </div>
+          
+        <div class="page__center page__center_pt0">
+          <div class="author author_big">
+            <div class="author__container">
+              <div class="author__details">
+                <div class="ava ava_online"><img class="ava__pic" src="https://ui8-astroclash.herokuapp.com/_next/image?url=%2Fimages%2Fcontent%2Favatars%2Flarge%2Favatar-2.jpg&w=256&q=100" alt=""></div>
+                <div class="author__wrap">
+                  <div class="author__man h2 confirm">Cody</div>
+                  <div class="author__parameters">
+                    <div class="author__parameter h6">536K conversations</div>
+                    <div class="author__parameter h6">119 reviews</div>
+                  </div>
+                </div>
+              </div>
+              <div class="author__btns"><button class="author__btn btn btn_purple" id="myButton">Test chat</button><button class="author__btn btn btn_asphalt btn_square"><svg class="icon icon-profile-check">
+                    <use xlink:href="img/sprite.svg#icon-profile-check"></use>
+                  </svg></button></div>
+            </div>
+          </div>
+          
+          <div class="catalog catalog_channel">
+              <div class="catalog__nav"><a class="catalog__link active" href="#">Knowledgebase</a><a class="catalog__link" href="#" style="opacity:0.2" >Chats</a><a class="catalog__link" style="opacity:0.2" href="#">Integrations </a><a class="catalog__link" href="#" style="opacity:0.2" >Analytics</a><a class="catalog__link" href="#">Embed on site</a><a class="catalog__link" href="#">Settings </a></div>
+              <div class="catalog">
+    <div class="catalog__tags">
+      <a class="catalog__tag" href="#" onclick="showSection('files')">Upload</a>
+      <a class="catalog__tag" href="#" onclick="showSection('text')">Text</a>
+      <a class="catalog__tag" href="#" onclick="showSection('crawler')">Crawl</a>
+    </div>
+    <div id="files-section" class="files-section">
+                <div class="page__title h2 __web-inspector-hide-shortcut__">File manager</div>
+                
+                <div class="upload__row">
+                  <div class="upload__col">
+                    <div class="upload__wrap"><input class="upload__input" type="file">
+                      <div class="upload__info h6">Drag files here to upload</div><button class="upload__btn btn btn_blue"><svg class="icon icon-upload">
+                          <use xlink:href="img/sprite.svg#icon-upload"></use>
+                        </svg><span class="btn__text">Or choose file</span></button>
+                    </div>
+                  </div>
+                  <div class="upload__col">
+                    <div class="upload__head">
+                      
+                      <div class="upload__text mr-auto color-gray">Folder</div><a class="upload__link" href="#"><svg class="icon icon-arrows">
+                          <use xlink:href="img/sprite.svg#icon-arrows"></use>
+                        </svg></a>
+                    </div>
+                    
+                    <div class="upload__line">
+                      <div class="upload__progress" style="width: 60%;">
+                        <div class="upload__tooltip">60%</div>
+                      </div>
+                    </div>
+                    
+                    <div class="files">
+                      <div class="files__list"><a class="files__item purple" href="#">
+                          <div class="files__details">
+                            <div class="files__title caption">attachment.json </div>
+                            <div class="files__size caption">3.6 MB</div>
+                          </div>
+                        </a><a class="files__item blue" href="#">
+                          <div class="files__details">
+                            <div class="files__title caption">attachment.png </div>
+                            <div class="files__size caption">2.1 MB</div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+                <button class="editor__btn btn btn_purple">Save changes</button>
+
+             </div>
+             <div id="text-section" class="text-section" style="display: none;">
+                <div class="page__title h2 __web-inspector-hide-shortcut__">Text editor</div>
+                <div class="editor__wrap">
+                  <div class="editor__head">
+                    <div class="editor__control"><button class="editor__action"><svg class="icon icon-editor-smile">
+                          <use xlink:href="img/sprite.svg#icon-editor-smile"></use>
+                        </svg></button><button class="editor__action active"><svg class="icon icon-editor-bold">
+                          <use xlink:href="img/sprite.svg#icon-editor-bold"></use>
+                        </svg></button><button class="editor__action"><svg class="icon icon-editor-italic">
+                          <use xlink:href="img/sprite.svg#icon-editor-italic"></use>
+                        </svg></button><button class="editor__action"><svg class="icon icon-editor-pic">
+                          <use xlink:href="img/sprite.svg#icon-editor-pic"></use>
+                        </svg></button></div><button class="editor__add"></button>
+                  </div>
+                  <div class="editor__body">
+                    <div class="editor__field"><textarea class="editor__textarea" placeholder="text ..."></textarea></div>
+                  </div>
+                </div>
+                <button class="editor__btn btn btn_purple">Save changes</button>
+              </div>
+
+              <div id="crawler-section" class="crawler-section" style="display: none;">
+                <div class="page__title h2 __web-inspector-hide-shortcut__">Site crawler</div>
+                <div class="popup__row">
+            <div class="popup__field field">
+              <div class="field__label">Enter domain</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+            <div class="popup__field field">
+              <div class="field__label">Enter domain</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+          </div>
+                <button class="editor__btn btn btn_purple">Save changes</button>
+              </div>
+          </div>
+          
+          
+          
+          </div>
+            
+          </div>
+
+<script>
+// JavaScript to switch sections
+function showSection(section) {
+  // Hide all sections
+  document.getElementById('files-section').style.display = 'none';
+  document.getElementById('text-section').style.display = 'none';
+  document.getElementById('crawler-section').style.display = 'none';
+
+  // Show the selected section
+  document.getElementById(section + '-section').style.display = 'block';
+}
+</script>
+        </div>
+       
+        </div>
+      </div>
+    </div>
+    
+
+
+    <div class="fixed inset-0 z-50 flex p-6 overflow-auto scroll-smooth md:px-4" id="myPopup" role="dialog" aria-modal="true" data-headlessui-state="open" style="display: flex;">
+  <div class="fixed inset-0 bg-n-7/90 dark:bg-n-7/95 opacity-100" aria-hidden="true"></div>
+  <div class="relative z-10 max-w-[48rem] w-full bg-n-1 rounded-[1.25rem] shadow-modal md:rounded-xl dark:bg-n-6 overflow-hidden opacity-100 scale-100 right-align-popup" id="headlessui-dialog-panel-:r1e:" data-headlessui-state="open">
+       <div class="h-64 p-4 bg-primary-3 md:h-44">
+      <div class="inline-flex items-center px-2 py-0.5 rounded-lg bg-n-6 text-small font-semibold text-n-1">
+        <svg class="inline-flex w-3 h-3 mr-2 fill-n-1" width="20" height="20" viewBox="0 0 20 20">
+          <path d="M10.003 3.333c2.385 0 4.329 1.054 5.769 2.256s2.425 2.589 2.919 3.371h0l.02.032c.098.154.225.355.29.635a1.8 1.8 0 0 1 0 .745c-.064.281-.192.481-.29.635h0l-.02.032c-.494.782-1.48 2.171-2.919 3.371s-3.385 2.256-5.769 2.256-4.329-1.054-5.769-2.256-2.425-2.589-2.919-3.371h0l-.02-.032c-.098-.154-.225-.355-.29-.635a1.8 1.8 0 0 1 0-.745c.064-.281.192-.481.29-.635h0l.02-.032c.494-.782 1.48-2.171 2.919-3.371s3.385-2.256 5.769-2.256zm0 3.333C8.163 6.667 6.67 8.159 6.67 10s1.492 3.333 3.333 3.333 3.333-1.492 3.333-3.333-1.492-3.333-3.333-3.333zm0 1.667c.92 0 1.667.746 1.667 1.667s-.746 1.667-1.667 1.667S8.337 10.92 8.337 10s.746-1.667 1.667-1.667z"></path>
+        </svg>Preview mode
+      </div>
+    </div>
+    <div class="relative -mt-10 mb-16 px-10 md:px-5 md:mb-10">
+      <div class="flex justify-center items-center shrink-0 w-20 h-20 mb-6 bg-n-7 rounded-[1.25rem]">
+        <img alt="" loading="lazy" width="100%" height="100%" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-5" src="https://ui8-astroclash.herokuapp.com/_next/image?url=%2Fimages%2Fcontent%2Favatars%2Flarge%2Favatar-2.jpg&w=256&q=100" style="color: transparent;">
+      </div>
+      <div class="mb-6 text-h4">Cody Coder</div>
+      <div class="h-0.25 mb-8 -mx-10 bg-n-3 md:-mx-5 md:mb-5 dark:bg-n-5"></div>
+      <div class="flex">
+        <div class="relative shrink-0 w-8 h-8 p-1.5 bg-n-7 rounded-full">
+          <img alt="Avatar" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-full" src="https://ui8-synapse-d5dce71271b7.herokuapp.com/images/logo-1.svg" style="color: transparent;">
+        </div>
+        <div class="w-[calc(100%-2rem)] pl-6">
+          <div class="mb-6 text-n-6 font-semibold dark:text-n-1">Here is a few of what I can do for you</div>
+          <div class="flex overflow-auto scroll-smooth scrollbar-none -mr-10 after:shrink-0 after:w-10 md:-mr-5 md:after:w-5">
+            <div class="relative shrink-0 w-60 mr-6 p-6 rounded-2xl gradient-3 md:mr-3">
+              <div class="absolute top-2 right-2 flex items-center h-5 px-3 rounded-lg bg-n-6 text-small font-semibold text-n-1">
+                <svg class="inline-flex w-3 h-3 mr-2 fill-n-1" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M10 1.663a5 5 0 0 1 5 5v.959c.236.052.462.127.68.238.627.32 1.137.83 1.457 1.457.206.404.288.835.326 1.303.037.451.037 1.005.037 1.675v1.236l-.037 1.675c-.038.468-.12.899-.326 1.303-.32.627-.83 1.137-1.457 1.457-.405.206-.835.288-1.304.326-.387.032-.849.036-1.395.037H7.299c-.671 0-1.224 0-1.675-.037-.468-.038-.899-.12-1.303-.326-.627-.32-1.137-.829-1.457-1.457-.206-.405-.288-.835-.326-1.303l-.036-1.129v-2.329l.036-1.129c.038-.468.12-.899.326-1.303.32-.627.83-1.137 1.457-1.457.218-.111.444-.186.68-.238v-.959a5 5 0 0 1 5-5zm0 9.583c-.46 0-.833.373-.833.833v1.667c0 .46.373.833.833.833s.833-.373.833-.833V12.08c0-.46-.373-.833-.833-.833zm0-7.917c-1.841 0-3.333 1.492-3.333 3.333h0v.835h6.667v-.835c0-1.841-1.492-3.333-3.333-3.333z"></path>
+                </svg>Pro only
+              </div>
+              <div class="flex justify-center items-center w-10 h-10 mb-6 rounded-xl bg-n-1 shadow-2">
+                <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-6" src="https://ui8-synapse-d5dce71271b7.herokuapp.com/images/video-recorder.svg" style="color: transparent;">
+              </div>
+              <div class="mb-1 text-base-1 font-semibold dark:text-n-7">Video maker</div>
+            </div>
+            <div class="relative shrink-0 w-60 mr-6 p-6 rounded-2xl gradient-2 md:mr-3">
+              <div class="absolute top-2 right-2 flex items-center h-5 px-3 rounded-lg bg-n-6 text-small font-semibold text-n-1">New</div>
+              <div class="flex justify-center items-center w-10 h-10 mb-6 rounded-xl bg-n-1 shadow-2">
+                <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-6" src="https://ui8-synapse-d5dce71271b7.herokuapp.com/images/message-question-circle.svg" style="color: transparent;">
+              </div>
+              <div class="mb-1 text-base-1 font-semibold dark:text-n-7">Question answering</div>
+            </div>
+            <div class="relative shrink-0 w-60 p-6 rounded-2xl gradient-1">
+              <div class="absolute top-2 right-2 flex items-center h-5 px-3 rounded-lg bg-n-6 text-small font-semibold text-n-1">New</div>
+              <div class="flex justify-center items-center w-10 h-10 mb-6 rounded-xl bg-n-1 shadow-2">
+                <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-6" src="https://ui8-synapse-d5dce71271b7.herokuapp.com/images/image.svg" style="color: transparent;">
+              </div>
+              <div class="mb-1 text-base-1 font-semibold dark:text-n-7">Photo generator</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative shrink-0 z-5 max-w-[66.5rem] w-full mx-auto px-10 pb-8 before:absolute before:left-0 before:right-0 before:bottom-full before:h-8 before:bg-gradient-to-b before:to-n-1 before:from-n-1/0 before:pointer-events-none md:px-5 md:pb-5 md:before:h-6 dark:before:to-n-6 dark:before:from-n-6/0">
+      <div class="relative z-2 rounded-xl bg-gradient-to-r from-[#72BBFF] to-[#C390FF] before:absolute before:inset-0.25 before:bg-n-1 before:rounded-[0.6875rem] dark:before:bg-n-6">
+        <div class="relative flex items-center min-h-[4rem] pl-16 text-0 md:pl-15 pr-14">
+          <div class="absolute left-4 bottom-4 flex justify-center items-center w-8 h-8 bg-n-7 rounded-[0.625rem]" data-tooltip-id="my-tooltip" data-tooltip-content="Chat GPT-4">
+            <img alt="" loading="lazy" width="20" height="20" decoding="async" data-nimg="1" class="inline-block align-top opacity-0 transition-opacity opacity-100 w-5 opacity-100" src="https://ui8-synapse-d5dce71271b7.herokuapp.com/images/logo-1.svg" style="color: transparent;">
+          </div>
+          <textarea class="w-full h-12 py-3 bg-transparent text-body-2 text-n-7 outline-none resize-none placeholder:text-n-4 dark:text-n-1 dark:placeholder:text-n-4" placeholder="Ask me anything"></textarea>
+          <button class="group absolute right-4 bottom-3 w-10 h-10 outline-none md:right-2">
+            <svg class="inline-flex w-6 h-6 fill-n-7 transition-colors group-hover:fill-primary-4 dark:fill-n-2" width="20" height="20" viewBox="0 0 20 20">
+              <path d="M16.667 9a1 1 0 0 1 .993.883l.007.117v.833A7.67 7.67 0 0 1 10 18.5a7.67 7.67 0 0 1-7.663-7.423l-.004-.243V10a1 1 0 0 1 1.993-.117l.007.117v.833A5.67 5.67 0 0 0 10 16.5a5.67 5.67 0 0 0 5.663-5.449l.004-.217V10a1 1 0 0 1 1-1zM10 1.5c2.393 0 4.333 1.94 4.333 4.333h0v5c0 2.393-1.94 4.333-4.333 4.333s-4.333-1.94-4.333-4.333h0v-5C5.667 3.44 7.607 1.5 10 1.5zm0 2c-1.289 0-2.333 1.045-2.333 2.333h0v5c0 1.289 1.045 2.333 2.333 2.333s2.333-1.045 2.333-2.333h0v-5C12.333 4.545 11.289 3.5 10 3.5z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="absolute w-10 h-10 text-0 rounded-full fill-n-7 hover:!fill-color-5 dark:fill-n-3 top-4 right-4 bg-n-1 dark:bg-n-7">
+      <svg class="inline-flex w-5 h-5 fill-inherit transition-colors" width="20" height="20" viewBox="0 0 20 20">
+        <path d="M5.613 4.21l.094.083L10 8.585l4.293-4.292a1 1 0 0 1 1.497 1.32l-.083.094L11.415 10l4.292 4.293a1 1 0 0 1-1.32 1.497l-.094-.083L10 11.415l-4.293 4.292a1 1 0 0 1-1.497-1.32l.083-.094L8.585 10 4.293 5.707a1 1 0 0 1 1.32-1.497z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <div class="popup popup_settings mfp-hide" id="popup-settings">
+      <form class="popup__form">
+        <div class="popup__title h6">Account Settings</div>
+        <div class="popup__tags"><a class="popup__tag active" href="#">Profile</a><a class="popup__tag" href="#">Password</a><a class="popup__tag" href="#">Email</a><a class="popup__tag" href="#">Notification</a><a class="popup__tag" href="#">Settings</a></div>
+        <div class="popup__field field mobile-show">
+          <div class="field__wrap"><select class="field__select">
+              <option>Your Profile</option>
+              <option>Password</option>
+              <option>Channels</option>
+              <option>Apps</option>
+              <option>Data Export</option>
+            </select></div>
+        </div>
+        <div class="popup__user">
+          <div class="popup__title h6 mobile-show">Your Profile</div>
+          <div class="popup__category caption-sm">Your Avatar</div>
+          <div class="popup__line">
+            <div class="popup__ava"><img class="popup__pic" src="img/avatar.png" alt=""></div>
+            <div class="popup__details">
+              <div class="popup__btns">
+                <div class="popup__loading"><input class="popup__file" type="file"><button class="popup__btn btn btn_purple">Upload New</button></div><button class="popup__btn btn btn_gray">Delete Avatar</button>
+              </div>
+              <div class="popup__text">Avatar help your teammates recognize you in Unity.</div>
+            </div>
+          </div>
+        </div>
+        <div class="popup__fieldset">
+          <div class="popup__row">
+            <div class="popup__field field">
+              <div class="field__label">Your Full Name</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+            <div class="popup__field field">
+              <div class="field__label">Display Name</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+          </div>
+          <div class="popup__row">
+            <div class="popup__field field">
+              <div class="field__label">Role</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+            <div class="popup__field field">
+              <div class="field__label">Location</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+          </div>
+          <div class="popup__row">
+            <div class="popup__field field">
+              <div class="field__label">Role</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+            <div class="popup__field field">
+              <div class="field__label">Team</div>
+              <div class="field__wrap"><input class="field__input" type="text"></div>
+            </div>
+          </div>
+          <div class="popup__field field">
+            <div class="field__label">Bio</div>
+            <div class="field__wrap"><textarea class="field__textarea"></textarea></div>
+          </div>
+        </div><button class="popup__btn btn btn_purple" type="submit">Update Profile</button>
+      </form>
+    </div>
+
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/svg4everybody.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/apexcharts.min.js"></script>
+    <script src="js/lib/jquery.magnific-popup.min.js"></script>
+    <script src="js/lib/jquery.nice-select.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/charts.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+  // When the window has finished loading, set up the event listeners
+  window.onload = function() {
+    // Get the button that opens the popup
+    var btn = document.getElementById("myButton");
+
+    // Get the <div> element that is the popup
+    var popup = document.getElementById("myPopup");
+
+    // When the user clicks on the button, open the popup
+    btn.onclick = function() {
+      popup.style.display = "flex"; // Change display to "flex" to show the popup
+    }
+
+    // When the user clicks anywhere outside of the popup, close it
+    window.onclick = function(event) {
+      if (event.target.className.includes('bg-n-7')) { // Assuming 'bg-n-7' is part of the overlay's class
+        popup.style.display = "none";
+      }
+    }
+  }
+});
+
+</script>
+  </body>
+</html>

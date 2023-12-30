@@ -1,0 +1,20 @@
+.collection__field.field .main__btn {
+    /* background: red !important; */
+    width: 100%;
+}
+svg.icon.icon-add {
+    fill: white !important;
+    margin-right: 10px;
+    padding-top: 1px;
+}
+.manage_assistant {
+    color: #ffffffc2;
+}
+
+.sidebar__logo .sidebar__pic {
+    width: 130px !important;
+}
+.catalog__nav .catalog__link:first-child {
+    padding-left: 21px !important;
+}
+
