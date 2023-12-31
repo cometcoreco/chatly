@@ -317,111 +317,164 @@ if (localStorage.getItem('darkMode') === "on") {
           </div>
           
           <div class="catalog catalog_channel">
-              <div class="catalog__nav"><a class="catalog__link active" href="#">Knowledgebase</a><a class="catalog__link" href="#" style="opacity:0.2" >Chats</a><a class="catalog__link" style="opacity:0.2" href="#">Integrations </a><a class="catalog__link" href="#" style="opacity:0.2" >Analytics</a><a class="catalog__link" href="#">Embed on site</a><a class="catalog__link" href="#">Settings </a></div>
-              <div class="catalog">
-    <div class="catalog__tags">
-      <a class="catalog__tag" href="#" onclick="showSection('files')">Upload</a>
-      <a class="catalog__tag" href="#" onclick="showSection('text')">Text</a>
-      <a class="catalog__tag" href="#" onclick="showSection('crawler')">Crawl</a>
+            <div class="catalog">
+    <div class="catalog__nav">
+        <a class="catalog__link" href="#" onclick="showSection('knowledgebase')">Knowledgebase</a>
+        <a class="catalog__link" href="#" onclick="showSection('chats')">Chats</a>
+        <a class="catalog__link" href="#" onclick="showSection('integrations')">Integrations</a>
+        <a class="catalog__link" href="#" onclick="showSection('analytics')">Analytics</a>
+        <a class="catalog__link" href="#" onclick="showSection('embed')">Embed on Site</a>
+        <a class="catalog__link" href="#" onclick="showSection('settings')">Settings</a>
     </div>
-    <div id="files-section" class="files-section">
-                <div class="page__title h2 __web-inspector-hide-shortcut__">File manager</div>
-                
-                <div class="upload__row">
-                  <div class="upload__col">
-                    <div class="upload__wrap"><input class="upload__input" type="file">
-                      <div class="upload__info h6">Drag files here to upload</div><button class="upload__btn btn btn_blue"><svg class="icon icon-upload">
-                          <use xlink:href="img/sprite.svg#icon-upload"></use>
-                        </svg><span class="btn__text">Or choose file</span></button>
-                    </div>
-                  </div>
-                  <div class="upload__col">
-                    <div class="upload__head">
-                      
-                      <div class="upload__text mr-auto color-gray">Folder</div><a class="upload__link" href="#"><svg class="icon icon-arrows">
-                          <use xlink:href="img/sprite.svg#icon-arrows"></use>
-                        </svg></a>
-                    </div>
-                    
-                    <div class="upload__line">
-                      <div class="upload__progress" style="width: 60%;">
-                        <div class="upload__tooltip">60%</div>
-                      </div>
-                    </div>
-                    
-                    <div class="files">
-                      <div class="files__list"><a class="files__item purple" href="#">
-                          <div class="files__details">
-                            <div class="files__title caption">attachment.json </div>
-                            <div class="files__size caption">3.6 MB</div>
-                          </div>
-                        </a><a class="files__item blue" href="#">
-                          <div class="files__details">
-                            <div class="files__title caption">attachment.png </div>
-                            <div class="files__size caption">2.1 MB</div>
-                          </div>
-                        </a></div>
-                    </div>
-                  </div>
-                </div>
-                <button class="editor__btn btn btn_purple">Save changes</button>
 
-             </div>
-             <div id="text-section" class="text-section" style="display: none;">
-                <div class="page__title h2 __web-inspector-hide-shortcut__">Text editor</div>
-                <div class="editor__wrap">
-                  <div class="editor__head">
-                    <div class="editor__control"><button class="editor__action"><svg class="icon icon-editor-smile">
-                          <use xlink:href="img/sprite.svg#icon-editor-smile"></use>
-                        </svg></button><button class="editor__action active"><svg class="icon icon-editor-bold">
-                          <use xlink:href="img/sprite.svg#icon-editor-bold"></use>
-                        </svg></button><button class="editor__action"><svg class="icon icon-editor-italic">
-                          <use xlink:href="img/sprite.svg#icon-editor-italic"></use>
-                        </svg></button><button class="editor__action"><svg class="icon icon-editor-pic">
-                          <use xlink:href="img/sprite.svg#icon-editor-pic"></use>
-                        </svg></button></div><button class="editor__add"></button>
-                  </div>
-                  <div class="editor__body">
-                    <div class="editor__field"><textarea class="editor__textarea" placeholder="text ..."></textarea></div>
-                  </div>
-                </div>
-                <button class="editor__btn btn btn_purple">Save changes</button>
-              </div>
-
-              <div id="crawler-section" class="crawler-section" style="display: none;">
-                <div class="page__title h2 __web-inspector-hide-shortcut__">Site crawler</div>
-                <div class="popup__row">
-            <div class="popup__field field">
-              <div class="field__label">Enter domain</div>
-              <div class="field__wrap"><input class="field__input" type="text"></div>
-            </div>
-            <div class="popup__field field">
-              <div class="field__label">Enter domain</div>
-              <div class="field__wrap"><input class="field__input" type="text"></div>
-            </div>
-          </div>
-                <button class="editor__btn btn btn_purple">Save changes</button>
-              </div>
-          </div>
-          
-          
-          
-          </div>
+    <div id="knowledgebase-section" class="knowledgebase-section">
+        <div class="catalog">
+          <div id="secondary-tabs" class="catalog__tags">
+    <a class="catalog__tag" href="#" onclick="showKnowledgebaseSubsection('files')">Upload</a>
+    <a class="catalog__tag" href="#" onclick="showKnowledgebaseSubsection('text')">Text</a>
+    <a class="catalog__tag" href="#" onclick="showKnowledgebaseSubsection('crawler')">Crawl</a>
+</div>
+                <div id="files-section" class="files-section">
+                            <div class="page__title h2 __web-inspector-hide-shortcut__">File manager</div>
+                            
+                            <div class="upload__row">
+                              <div class="upload__col">
+                                <div class="upload__wrap"><input class="upload__input" type="file">
+                                  <div class="upload__info h6">Drag files here to upload</div><button class="upload__btn btn btn_blue"><svg class="icon icon-upload">
+                                      <use xlink:href="img/sprite.svg#icon-upload"></use>
+                                    </svg><span class="btn__text">Or choose file</span></button>
+                                </div>
+                              </div>
+                              <div class="upload__col">
+                                <div class="upload__head">
+                                  
+                                  <div class="upload__text mr-auto color-gray">Folder</div><a class="upload__link" href="#"><svg class="icon icon-arrows">
+                                      <use xlink:href="img/sprite.svg#icon-arrows"></use>
+                                    </svg></a>
+                                </div>
+                                
+                                <div class="upload__line">
+                                  <div class="upload__progress" style="width: 60%;">
+                                    <div class="upload__tooltip">60%</div>
+                                  </div>
+                                </div>
+                                
+                                <div class="files">
+                                  <div class="files__list"><a class="files__item purple" href="#">
+                                      <div class="files__details">
+                                        <div class="files__title caption">attachment.json </div>
+                                        <div class="files__size caption">3.6 MB</div>
+                                      </div>
+                                    </a><a class="files__item blue" href="#">
+                                      <div class="files__details">
+                                        <div class="files__title caption">attachment.png </div>
+                                        <div class="files__size caption">2.1 MB</div>
+                                      </div>
+                                    </a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="editor__btn btn btn_purple">Save changes</button>
             
-          </div>
+                         </div>
+                         <div id="text-section" class="text-section" style="display: none;">
+                            <div class="page__title h2 __web-inspector-hide-shortcut__">Text editor</div>
+                            <div class="editor__wrap">
+                              <div class="editor__head">
+                                <div class="editor__control"><button class="editor__action"><svg class="icon icon-editor-smile">
+                                      <use xlink:href="img/sprite.svg#icon-editor-smile"></use>
+                                    </svg></button><button class="editor__action active"><svg class="icon icon-editor-bold">
+                                      <use xlink:href="img/sprite.svg#icon-editor-bold"></use>
+                                    </svg></button><button class="editor__action"><svg class="icon icon-editor-italic">
+                                      <use xlink:href="img/sprite.svg#icon-editor-italic"></use>
+                                    </svg></button><button class="editor__action"><svg class="icon icon-editor-pic">
+                                      <use xlink:href="img/sprite.svg#icon-editor-pic"></use>
+                                    </svg></button></div><button class="editor__add"></button>
+                              </div>
+                              <div class="editor__body">
+                                <div class="editor__field"><textarea class="editor__textarea" placeholder="text ..."></textarea></div>
+                              </div>
+                            </div>
+                            <button class="editor__btn btn btn_purple">Save changes</button>
+                          </div>
+            
+                          <div id="crawler-section" class="crawler-section" style="display: none;">
+                            <div class="page__title h2 __web-inspector-hide-shortcut__">Site crawler</div>
+                            <div class="popup__row">
+                        <div class="popup__field field">
+                          <div class="field__label">Enter domain</div>
+                          <div class="field__wrap"><input class="field__input" teype="text"></div>
+                        </div>
+                        <div class="popup__field field">
+                          <div class="field__label">Enter domain</div>
+                          <div class="field__wrap"><input class="field__input" type="text"></div>
+                        </div>
+                      </div>
+                            <button class="editor__btn btn btn_purple">Save changes</button>
+                          </div>
+                      </div>
+                      
+    </div>
+    <div id="chats-section" class="chats-section" style="display: none;">
+        <!-- Content for Chats Section -->
+    </div>
+    <div id="integrations-section" class="integrations-section" style="display: none;">
+        <!-- Content for Integrations Section -->
+    </div>
+    <div id="analytics-section" class="analytics-section" style="display: none;">
+        <!-- Content for Analytics Section -->
+    </div>
+    <div id="embed-section" class="embed-section" style="display: none;">
+        <!-- Content for Embed on Site Section -->
+    </div>
+    <div id="settings-section" class="settings-section" style="display: none;">
+        <!-- Content for Settings Section -->
+    </div>
+</div>
 
 <script>
-// JavaScript to switch sections
 function showSection(section) {
-  // Hide all sections
-  document.getElementById('files-section').style.display = 'none';
-  document.getElementById('text-section').style.display = 'none';
-  document.getElementById('crawler-section').style.display = 'none';
+    // Hide all sections
+    document.getElementById('knowledgebase-section').style.display = 'none';
+    document.getElementById('chats-section').style.display = 'none';
+    document.getElementById('integrations-section').style.display = 'none';
+    document.getElementById('analytics-section').style.display = 'none';
+    document.getElementById('embed-section').style.display = 'none';
+    document.getElementById('settings-section').style.display = 'none';
 
-  // Show the selected section
-  document.getElementById(section + '-section').style.display = 'block';
+    // Handle secondary tabs visibility
+    const secondaryTabs = document.getElementById('secondary-tabs');
+    if (section === 'knowledgebase') {
+        secondaryTabs.style.display = 'block';
+        // Show default subsection for knowledgebase
+        showKnowledgebaseSubsection('files');
+    } else {
+        secondaryTabs.style.display = 'none';
+    }
+
+    // Show the selected section
+    document.getElementById(section + '-section').style.display = 'block';
 }
+
+function showKnowledgebaseSubsection(subsection) {
+    // Hide all subsections of knowledgebase
+    document.getElementById('files-section').style.display = 'none';
+    document.getElementById('text-section').style.display = 'none';
+    document.getElementById('crawler-section').style.display = 'none';
+
+    // Show the selected subsection
+    document.getElementById(subsection + '-section').style.display = 'block';
+}
+
+// Set initial state when page loads
+window.onload = function() {
+    showSection('knowledgebase'); // Or any other default section you want to show
+};
 </script>
+
+
+    
+
         </div>
        
         </div>

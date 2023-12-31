@@ -13152,7 +13152,7 @@ img.inline-block.align-top.opacity-0.transition-opacity.opacity-100.w-5 {
     height: 440px;
 }
 #myPopup {
-    display: none;
+    display: none !important;
 }
 .mb-6.text-h4, .mb-1  {
   color: #292d32;
